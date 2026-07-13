@@ -1,335 +1,247 @@
 # Histogramme
 
-Die folgenden Historgramme dürfen frei verwendet werden, ich stelle diese parallel zur MIT Lizenz auch als CC0 1.0 Universal zur Verfügung
-Histogramm der Programmiersprachen  by Thomas Schubert is marked CC0 1.0 Universal. To view a copy of this mark, visit https://creativecommons.org/publicdomain/zero/1.0/
+Die folgenden Histogramme dürfen frei verwendet werden. Ich stelle diese parallel zur MIT-Lizenz auch unter CC0 1.0 Universal zur Verfügung.
+
+Histogramm der Programmiersprachen by Thomas Schubert is marked CC0 1.0 Universal. To view a copy of this mark, visit https://creativecommons.org/publicdomain/zero/1.0/
 
 ## Histogramm der Programmiersprachen
 
 ```mermaid
 flowchart TB
 
-  %% =========================================================
-  %% 1940er Jahre
-  %% =========================================================
+%% =========================================================
+%% Jahrzehnte und Programmiersprachen
+%% =========================================================
+
+subgraph Y1940["1940er Jahre"]
+    direction TB
+    T1940["1940"]
+    PLANKALKUEL["Plankalkuel (1948)"]
+end
+
+subgraph Y1950["1950er Jahre"]
+    direction TB
+    T1950["1950"]
+    FORTRAN["FORTRAN (1957)"]
+    LISP["Lisp (1958)"]
+end
+
+subgraph Y1960["1960er Jahre"]
+    direction TB
+    T1960["1960"]
+    ALGOL["ALGOL 60 (1960)"]
+    COBOL["COBOL (1960)"]
+    BASIC["BASIC (1964)"]
+    SIMULA["Simula (1967)"]
+    LOGO["Logo (1967)"]
+end
+
+subgraph Y1970["1970er Jahre"]
+    direction TB
+    T1970["1970"]
+    PASCAL["Pascal (1970)"]
+    FORTH["Forth (1970)"]
+    SMALLTALK["Smalltalk (1972)"]
+    C["C (1972)"]
+    PROLOG["Prolog (1972)"]
+    SQL["SQL (1974)"]
+    SCHEME["Scheme (1975)"]
+    ML["ML (1977)"]
+end
+
+subgraph Y1980["1980er Jahre"]
+    direction TB
+    T1980["1980"]
+    ADA["Ada (1983)"]
+    OBJECTIVEC["Objective-C (1984)"]
+    CPP["C++ (1985)"]
+    ERLANG["Erlang (1986)"]
+    PERL["Perl (1987)"]
+    TCL["Tcl (1988)"]
+end
+
+subgraph Y1990["1990er Jahre"]
+    direction TB
+    T1990["1990"]
+    HASKELL["Haskell (1990)"]
+    PYTHON["Python (1991)"]
+    VB["Visual Basic (1991)"]
+    LUA["Lua (1993)"]
+    R["R (1993)"]
+    RUBY["Ruby (1995)"]
+    JAVA["Java (1995)"]
+    JAVASCRIPT["JavaScript (1995)"]
+    PHP["PHP (1995)"]
+    DELPHI["Delphi (1995)"]
+    OCAML["OCaml (1996)"]
+end
+
+subgraph Y2000["2000er Jahre"]
+    direction TB
+    T2000["2000"]
+    CSHARP["C# (2000)"]
+    SCALA["Scala (2004)"]
+    FSHARP["F# (2005)"]
+    POWERSHELL["PowerShell (2006)"]
+    CLOJURE["Clojure (2007)"]
+    GO["Go (2009)"]
+end
+
+subgraph Y2010["2010er Jahre"]
+    direction TB
+    T2010["2010"]
+    RUST["Rust (2010)"]
+    KOTLIN["Kotlin (2011)"]
+    TYPESCRIPT["TypeScript (2012)"]
+    JULIA["Julia (2012)"]
+    ELIXIR["Elixir (2012)"]
+    SWIFT["Swift (2014)"]
+    ZIG["Zig (2016)"]
+end
+
+subgraph Y2020["2020er Jahre"]
+    direction TB
+    T2020["2020"]
+    MOJO["Mojo (2023)"]
+end
+
+%% =========================================================
+%% Zeitachse
+%% =========================================================
+
+T1940 -.-> T1950
+T1950 -.-> T1960
+T1960 -.-> T1970
+T1970 -.-> T1980
+T1980 -.-> T1990
+T1990 -.-> T2000
+T2000 -.-> T2010
+T2010 -.-> T2020
 
-  subgraph Y1940["1940er Jahre"]
-      PLANKALKUEL["Plankalkül<br/>1948<br/>Variablen · Arrays · strukturierte Daten"]
-  end
+%% =========================================================
+%% Abstammung oder direkte Sprachfamilie
+%% =========================================================
 
+ALGOL --> PASCAL
+ALGOL --> C
+ALGOL --> SIMULA
 
-  %% =========================================================
-  %% 1950er Jahre
-  %% =========================================================
+SIMULA --> SMALLTALK
 
-  subgraph Y1950["1950er Jahre"]
-      FORTRAN["FORTRAN<br/>1957<br/>Compiler · Schleifen · numerisches Rechnen"]
+C --> CPP
+C --> OBJECTIVEC
 
-      LISP["Lisp<br/>1958<br/>Listen · Rekursion · Garbage Collection<br/>Homoikonizität"]
-  end
+PASCAL --> DELPHI
 
+LISP --> SCHEME
+LISP --> CLOJURE
 
-  %% =========================================================
-  %% 1960er Jahre
-  %% =========================================================
+BASIC --> VB
 
-  subgraph Y1960["1960er Jahre"]
-      ALGOL["ALGOL 60<br/>1960<br/>Blockstruktur · lokale Variablen · BNF"]
+ML --> HASKELL
+ML --> OCAML
 
-      COBOL["COBOL<br/>1960<br/>Geschäftsanwendungen · lesbare Syntax<br/>Datensatzverarbeitung"]
+OCAML --> FSHARP
 
-      BASIC["BASIC<br/>1964<br/>Einfache interaktive Programmierung<br/>Ausbildung"]
+OBJECTIVEC --> SWIFT
 
-      SIMULA["Simula<br/>1967<br/>Klassen · Objekte · Vererbung"]
+JAVA --> KOTLIN
 
-      LOGO["Logo<br/>1967<br/>Lernen · Turtle Graphics · Lisp-Ideen"]
-  end
+JAVASCRIPT --> TYPESCRIPT
 
+ERLANG --> ELIXIR
 
-  %% =========================================================
-  %% 1970er Jahre
-  %% =========================================================
+%% =========================================================
+%% Einfluss
+%% =========================================================
 
-  subgraph Y1970["1970er Jahre"]
-      PASCAL["Pascal<br/>1970<br/>Strukturierte Programmierung<br/>starke Typisierung"]
+PLANKALKUEL --> ALGOL
 
-      FORTH["Forth<br/>1970<br/>Stack-basiert · interaktiv · kompakt"]
+FORTRAN --> BASIC
+FORTRAN --> R
+FORTRAN --> JULIA
 
-      SMALLTALK["Smalltalk<br/>1972<br/>Reine Objektorientierung<br/>Message Passing · IDE"]
+LISP --> LOGO
+LISP --> ML
+LISP --> RUBY
 
-      C["C<br/>1972<br/>Systemprogrammierung · Pointer<br/>portable Betriebssysteme"]
+ALGOL --> ADA
 
-      PROLOG["Prolog<br/>1972<br/>Logikprogrammierung · Regeln<br/>Unifikation · Backtracking"]
+SIMULA --> CPP
 
-      SQL["SQL<br/>1974<br/>Deklarative Datenabfragen<br/>relationale Datenbanken"]
+SMALLTALK --> OBJECTIVEC
+SMALLTALK --> RUBY
+SMALLTALK --> JAVA
+SMALLTALK --> JAVASCRIPT
 
-      SCHEME["Scheme<br/>1975<br/>Minimalistisches Lisp · Closures<br/>lexikalischer Scope"]
+C --> JAVA
+C --> CSHARP
+C --> GO
+C --> RUST
+C --> ZIG
+C --> JAVASCRIPT
+C --> PHP
 
-      ML["ML<br/>1977<br/>Typinferenz · algebraische Datentypen<br/>Pattern Matching"]
-  end
+CPP --> JAVA
+CPP --> CSHARP
+CPP --> RUST
 
+JAVA --> CSHARP
+JAVA --> SCALA
+JAVA --> CLOJURE
 
-  %% =========================================================
-  %% 1980er Jahre
-  %% =========================================================
+SCHEME --> JAVASCRIPT
 
-  subgraph Y1980["1980er Jahre"]
-      ADA["Ada<br/>1983<br/>Starke Typisierung · Modularität<br/>Nebenläufigkeit"]
+ML --> SCALA
+ML --> RUST
+ML --> SWIFT
 
-      OBJECTIVEC["Objective-C<br/>1984<br/>C · Smalltalk-Nachrichten<br/>dynamische Laufzeit"]
+HASKELL --> SCALA
 
-      CPP["C++<br/>1985<br/>Objektorientierung · Templates<br/>RAII"]
+PROLOG --> ERLANG
+ADA --> ERLANG
 
-      ERLANG["Erlang<br/>1986<br/>Actor-Modell · Fehlertoleranz<br/>verteilte Systeme"]
+ERLANG --> SCALA
+ERLANG --> GO
 
-      PERL["Perl<br/>1987<br/>Textverarbeitung · reguläre Ausdrücke<br/>Skripting"]
+PERL --> PYTHON
+PERL --> PHP
+PERL --> RUBY
 
-      TCL["Tcl<br/>1988<br/>Einbettbare Skriptsprache<br/>alles ist ein String"]
-  end
+TCL --> LUA
 
+PYTHON --> JULIA
+PYTHON --> MOJO
 
-  %% =========================================================
-  %% 1990er Jahre
-  %% =========================================================
+RUBY --> ELIXIR
 
-  subgraph Y1990["1990er Jahre"]
-      HASKELL["Haskell<br/>1990<br/>Rein funktional · Lazy Evaluation<br/>Typklassen"]
+CSHARP --> POWERSHELL
 
-      PYTHON["Python<br/>1991<br/>Lesbarkeit · dynamische Typisierung<br/>Mehrparadigmenansatz"]
+SCALA --> KOTLIN
 
-      VB["Visual Basic<br/>1991<br/>Rapid Application Development<br/>ereignisgesteuerte GUIs"]
+RUST --> MOJO
+SWIFT --> MOJO
 
-      LUA["Lua<br/>1993<br/>Leichtgewichtig · einbettbar<br/>Tabellen als zentrale Struktur"]
+%% =========================================================
+%% Gestaltung
+%% =========================================================
 
-      R["R<br/>1993<br/>Statistik · Vektorisierung<br/>Datenanalyse"]
+classDef timelineAnchor fill:none,stroke:none,color:transparent;
+class T1940,T1950,T1960,T1970,T1980,T1990,T2000,T2010,T2020 timelineAnchor;
 
-      RUBY["Ruby<br/>1995<br/>Objektorientierung · Blöcke<br/>Metaprogrammierung"]
+linkStyle default stroke:#111111,stroke-width:1.5px;
 
-      JAVA["Java<br/>1995<br/>JVM · Garbage Collection<br/>plattformunabhängiger Bytecode"]
+linkStyle 0,1,2,3,4,5,6,7 stroke:#888888,stroke-width:1.5px,stroke-dasharray:6 4;
 
-      JAVASCRIPT["JavaScript<br/>1995<br/>Prototypen · Closures<br/>Webprogrammierung"]
+linkStyle 8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24 stroke:#228B22,stroke-width:2px;
 
-      PHP["PHP<br/>1995<br/>Serverseitige Webentwicklung<br/>HTML-Einbettung"]
-
-      DELPHI["Delphi / Object Pascal<br/>1995<br/>RAD · Komponenten · GUI-Entwicklung"]
-
-      OCAML["OCaml<br/>1996<br/>Funktional · objektorientiert<br/>Typinferenz · Module"]
-  end
-
-
-  %% =========================================================
-  %% 2000er Jahre
-  %% =========================================================
-
-  subgraph Y2000["2000er Jahre"]
-      CSHARP["C#<br/>2000<br/>.NET · Managed Code · Properties<br/>Delegates · LINQ"]
-
-      SCALA["Scala<br/>2004<br/>Objektorientiert · funktional<br/>JVM · Pattern Matching"]
-
-      FSHARP["F#<br/>2005<br/>Funktional auf .NET<br/>Typinferenz · Async Workflows"]
-
-      POWERSHELL["PowerShell<br/>2006<br/>Objektbasierte Shell<br/>Pipelines · .NET-Integration"]
-
-      CLOJURE["Clojure<br/>2007<br/>Lisp auf der JVM · Immutability<br/>Software Transactional Memory"]
-
-      GO["Go<br/>2009<br/>Einfachheit · Goroutines · Channels<br/>schnelle Kompilierung"]
-  end
-
-
-  %% =========================================================
-  %% 2010er Jahre
-  %% =========================================================
-
-  subgraph Y2010["2010er Jahre"]
-      RUST["Rust<br/>2010<br/>Memory Safety · Ownership · Borrowing<br/>keine Garbage Collection"]
-
-      KOTLIN["Kotlin<br/>2011<br/>Null-Sicherheit · JVM-Interop<br/>Coroutines"]
-
-      TYPESCRIPT["TypeScript<br/>2012<br/>Statische Typisierung für JavaScript<br/>Structural Typing"]
-
-      JULIA["Julia<br/>2012<br/>Wissenschaftliches Rechnen<br/>Multiple Dispatch · JIT"]
-
-      ELIXIR["Elixir<br/>2012<br/>Erlang VM · Actor-Modell<br/>fehlertolerante Anwendungen"]
-
-      SWIFT["Swift<br/>2014<br/>Optionals · Value Types<br/>Protocol-oriented Programming"]
-
-      ZIG["Zig<br/>2016<br/>Systemprogrammierung · manuelle Speicherverwaltung<br/>Comptime"]
-  end
-
-
-  %% =========================================================
-  %% 2020er Jahre
-  %% =========================================================
-
-  subgraph Y2020["2020er Jahre"]
-      MOJO["Mojo<br/>2023<br/>Python-nahe Syntax · Ownership-Ideen<br/>KI · HPC · Hardwareoptimierung"]
-  end
-
-
-  %% =========================================================
-  %% Zeitachse und Layout-Hilfen
-  %% =========================================================
-
-  Y1940 -.-> Y1950
-  Y1950 -.-> Y1960
-  Y1960 -.-> Y1970
-  Y1970 -.-> Y1980
-  Y1980 -.-> Y1990
-  Y1990 -.-> Y2000
-  Y2000 -.-> Y2010
-  Y2010 -.-> Y2020
-
-
-  %% =========================================================
-  %% Frühe Einflüsse
-  %% =========================================================
-
-  PLANKALKUEL -.->|"historischer Vorläufer"| ALGOL
-
-  FORTRAN --> BASIC
-  FORTRAN -.->|"numerisches Rechnen"| JULIA
-
-  LISP --> LOGO
-  LISP --> SCHEME
-  LISP --> ML
-  LISP --> CLOJURE
-  LISP -.->|"funktionale Konzepte"| HASKELL
-  LISP -.->|"dynamische Sprache"| RUBY
-
-
-  %% =========================================================
-  %% ALGOL-, Pascal- und C-Familie
-  %% =========================================================
-
-  ALGOL --> SIMULA
-  ALGOL --> PASCAL
-  ALGOL --> C
-  ALGOL -.->|"Blockstruktur"| ADA
-
-  PASCAL --> ADA
-  PASCAL --> DELPHI
-
-  SIMULA --> SMALLTALK
-  SIMULA --> CPP
-
-  C --> CPP
-  C --> OBJECTIVEC
-  C --> JAVA
-  C --> CSHARP
-  C --> GO
-  C --> RUST
-  C --> ZIG
-  C -.->|"Syntax"| JAVASCRIPT
-  C -.->|"Syntax"| PHP
-  C -.->|"Systemnähe"| SWIFT
-
-  SMALLTALK --> OBJECTIVEC
-  SMALLTALK --> RUBY
-  SMALLTALK -.->|"Objektmodell"| JAVA
-  SMALLTALK -.->|"Nachrichten und Dynamik"| JAVASCRIPT
-
-  OBJECTIVEC --> SWIFT
-
-  CPP --> JAVA
-  CPP --> CSHARP
-  CPP -.->|"Generics und Systemkonzepte"| RUST
-
-  JAVA --> CSHARP
-  JAVA --> SCALA
-  JAVA --> KOTLIN
-  JAVA --> CLOJURE
-
-  JAVASCRIPT --> TYPESCRIPT
-
-
-  %% =========================================================
-  %% Funktionale Sprachfamilie
-  %% =========================================================
-
-  SCHEME -.->|"Closures und funktionaler Stil"| JAVASCRIPT
-
-  ML --> HASKELL
-  ML --> OCAML
-  ML --> FSHARP
-  ML -.->|"Typensystem"| SCALA
-  ML -.->|"Pattern Matching"| RUST
-  ML -.->|"Option Types"| SWIFT
-
-  OCAML --> FSHARP
-  HASKELL -.->|"Typklassen und funktionale Konzepte"| SCALA
-
-
-  %% =========================================================
-  %% Nebenläufigkeit und verteilte Systeme
-  %% =========================================================
-
-  PROLOG -.->|"Pattern Matching und symbolische Verarbeitung"| ERLANG
-  ADA -.->|"Nebenläufigkeit"| ERLANG
-
-  ERLANG --> ELIXIR
-  ERLANG -.->|"Actor-Modell"| SCALA
-  ERLANG -.->|"leichtgewichtige Prozesse"| GO
-
-  CSP["CSP<br/>1978<br/>Kommunizierende sequenzielle Prozesse"]:::concept
-  CSP -.->|"Channels"| GO
-  CSP -.->|"Nebenläufigkeitsmodell"| ERLANG
-
-
-  %% =========================================================
-  %% Skript- und Anwendungssprachen
-  %% =========================================================
-
-  BASIC --> VB
-
-  PERL -.->|"Skripting und Textverarbeitung"| PYTHON
-  PERL -.->|"Web-Skripting"| PHP
-  PERL -.->|"reguläre Ausdrücke"| RUBY
-
-  TCL -.->|"Einbettbarkeit"| LUA
-
-  PYTHON -.->|"Syntax und Bedienbarkeit"| JULIA
-  PYTHON -.->|"Python-Kompatibilität"| MOJO
-
-  RUBY -.->|"Blöcke und Entwicklerfreundlichkeit"| ELIXIR
-
-
-  %% =========================================================
-  %% Datenbanken und Datenanalyse
-  %% =========================================================
-
-  SQL -.->|"deklarative Abfragen"| R
-
-  FORTRAN -.->|"wissenschaftliches Rechnen"| R
-  FORTRAN -.->|"wissenschaftliches Rechnen"| JULIA
-
-
-  %% =========================================================
-  %% Moderne Sprachkonzepte
-  %% =========================================================
-
-  CSHARP --> POWERSHELL
-  CSHARP -.->|"Async und moderne Syntax"| KOTLIN
-
-  SCALA -.->|"funktionale JVM-Sprache"| KOTLIN
-
-  RUST -.->|"Ownership und Memory Safety"| MOJO
-
-  SWIFT -.->|"moderne sichere Systemkonzepte"| MOJO
-
-
-  %% =========================================================
-  %% Gestaltung
-  %% =========================================================
-
-  classDef concept fill:#f4f4f4,stroke:#777,stroke-dasharray:5 5
-
-  style Y1940 fill:#f8f8f8
-  style Y1950 fill:#f8f8f8
-  style Y1960 fill:#f8f8f8
-  style Y1970 fill:#f8f8f8
-  style Y1980 fill:#f8f8f8
-  style Y1990 fill:#f8f8f8
-  style Y2000 fill:#f8f8f8
-  style Y2010 fill:#f8f8f8
-  style Y2020 fill:#f8f8f8
-
+style Y1940 fill:#f7f7f7,stroke:#aaaaaa
+style Y1950 fill:#f7f7f7,stroke:#aaaaaa
+style Y1960 fill:#f7f7f7,stroke:#aaaaaa
+style Y1970 fill:#f7f7f7,stroke:#aaaaaa
+style Y1980 fill:#f7f7f7,stroke:#aaaaaa
+style Y1990 fill:#f7f7f7,stroke:#aaaaaa
+style Y2000 fill:#f7f7f7,stroke:#aaaaaa
+style Y2010 fill:#f7f7f7,stroke:#aaaaaa
+style Y2020 fill:#f7f7f7,stroke:#aaaaaa
 ```
